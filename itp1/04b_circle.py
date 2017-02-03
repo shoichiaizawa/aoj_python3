@@ -13,7 +13,7 @@ def circumference_of_circle(radius):
 
 
 def main():
-    # NOTE
+    # NOTE Tried sys.stdin.readline() instead of input()
     r = float(sys.stdin.readline())
     print('%f %f' % (area_of_circle(r), circumference_of_circle(r)))
 
