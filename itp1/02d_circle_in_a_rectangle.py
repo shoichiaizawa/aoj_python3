@@ -8,8 +8,7 @@ def string_five_numbers_spliter():
     Returns:
         Five integer values; namely, w, h, x, y and r
     """
-    w, h, x, y, r = [int(i) for i in input('Enter three numbers concatenated ' +
-    'by a single space between them, e.g. \'5 4 2 2 1\': ').split()]
+    w, h, x, y, r = [int(i) for i in input().split()]
     return w, h, x, y, r
 
 
@@ -34,9 +33,6 @@ def main():
 if __name__ == '__main__':
     main()
 
-
-# NOTE input() needs to be without a string parameter for the AOJ judge;
-# see the NOTE_section in 0101b_x_cubic.py for a detailed explanation.
 
 # NOTE Stack Overflow pages inspired me to sove this question:
 # - Way to create multiline comments in Python?:

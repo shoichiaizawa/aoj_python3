@@ -1,8 +1,7 @@
 #!usr/bin/env python3
 
 def string_two_numbers_spliter():
-    x, y = [int(i) for i in input('Enter two numbers concatenated ' +
-    'by a single space between them, e.g. \'1 2\': ').split()]
+    x, y = [int(i) for i in input().split()]
     return x, y
 
 
@@ -27,9 +26,6 @@ if __name__ == '__main__':
 
 # NOTE AOJ question URL (Repetitive Processing - Swapping Two Numbers?):
 # http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_C
-
-# NOTE input() needs to be without a string parameter for the AOJ judge;
-# see the NOTE_section in 0101b_x_cubic.py for a detailed explanation.
 
 # NOTE Web pages inspired me to sove this question:
 # Is there a standardized method to swap two variables in Python?:

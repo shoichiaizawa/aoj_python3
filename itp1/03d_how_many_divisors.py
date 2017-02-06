@@ -1,8 +1,7 @@
 #!usr/bin/env python3
 
 def string_three_numbers_spliter():
-    a, b, c = [int(i) for i in input('Enter three numbers concatenated ' +
-    'by a single space between them, e.g. \'5 14 80\' etc: ').split()]
+    a, b, c = [int(i) for i in input().split()]
     return a, b, c
 
 
@@ -27,9 +26,6 @@ if __name__ == '__main__':
 
 # NOTE AOJ question URL (Repetitive Processing - How Many Divisors?):
 # http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=ITP1_3_D
-
-# NOTE input() needs to be without a string parameter for the AOJ judge;
-# see the NOTE_section in 0101b_x_cubic.py for a detailed explanation.
 
 # NOTE The following web sites might be helpful to find factors of a number:
 # - What is the most efficient way of finding all the factors of a number in
