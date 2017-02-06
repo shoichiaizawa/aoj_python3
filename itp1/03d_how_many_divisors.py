@@ -16,8 +16,8 @@ def count_nums_of_factors_of_c_in_a_and_b(a, b, c):
 
 
 def main():
-    a, b, c = string_two_numbers_spliter()
-    print(count_nums_of_divisors_of_c_in_a_and_b(a, b, c))
+    a, b, c = string_three_numbers_spliter()
+    print(count_nums_of_factors_of_c_in_a_and_b(a, b, c))
 
 
 if __name__ == '__main__':
