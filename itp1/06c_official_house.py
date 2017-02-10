@@ -29,7 +29,7 @@ def print_buildings_with_residents():
 
 
 def main():
-    print_buildings()
+    print_buildings_with_residents()
 
 
 if __name__ == '__main__':
