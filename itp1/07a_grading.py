@@ -9,7 +9,7 @@ def main():
 
         if m == f == r == -1:
             break
-        if m == -1 or f == -1:
+        if m == -1 or f == -1 or m+f < 30:
             print('F')
         elif m+f >= 80:
             print('A')
@@ -22,8 +22,6 @@ def main():
                 print('C')
             else:
                 print('D')
-        elif m+f < 30:
-            print('F')
 
 
 if __name__ == '__main__':
