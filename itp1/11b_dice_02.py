@@ -71,8 +71,7 @@ def roll_die(die):
     return die
 
 
-def main():
-    die = init_die()
+def question_rightside(die):
     q = int(sys.stdin.readline().strip('\n'))
 
     for question in range(q):
@@ -94,6 +93,11 @@ def main():
             die.spin_die_clockwise()
 
         print(die.get_rightside())
+
+
+def main():
+    die = init_die()
+    question_rightside(die)
 
 
 if __name__ == '__main__':
