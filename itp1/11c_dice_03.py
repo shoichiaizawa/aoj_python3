@@ -64,6 +64,7 @@ def roll_die(die):
 
 def question_rightside(die):
     q = int(sys.stdin.readline().strip('\n'))
+    rightsides = []
 
     for question in range(q):
         q_pips = [int(pip) for pip in sys.stdin.readline().strip('\n').split()]
@@ -83,7 +84,9 @@ def question_rightside(die):
         while die.pips[1] != q_pips[1]:
             die.spin_die_clockwise()
 
-        print(die.pips[2])
+        rightsides.append(die.pips[2])
+
+    return rightsides
 
 
 def are_identical(die1, die2):
