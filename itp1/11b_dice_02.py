@@ -45,15 +45,6 @@ class Die:
         self.pips[3] = tmp
         del tmp
 
-    def get_upside(self):
-        return self.pips[0]
-
-    def get_frontside(self):
-        return self.pips[1]
-
-    def get_rightside(self):
-        return self.pips[2]
-
 
 def init_die():
     pips = [int(pip) for pip in sys.stdin.readline().strip('\n').split()]
@@ -89,10 +80,10 @@ def question_rightside(die):
             die.move_die('N')
             die.move_die('N')
 
-        while die.get_frontside() != q_pips[1]:
+        while die.pips[1] != q_pips[1]:
             die.spin_die_clockwise()
 
-        print(die.get_rightside())
+        print(die.pips[2])
 
 
 def main():
