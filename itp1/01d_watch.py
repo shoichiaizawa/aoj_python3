@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 def seconds_to_hms_format(seconds):
     m, s = divmod(int(seconds), 60)

@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 def string_five_numbers_spliter():
     """Split a given space-separated five numbers in a string into integers

@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 def string_three_numbers_spliter():
     a, b, c = [int(i) for i in input().split()]

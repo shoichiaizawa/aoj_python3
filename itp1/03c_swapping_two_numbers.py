@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 
 def string_two_numbers_spliter():
     x, y = [int(i) for i in input().split()]
